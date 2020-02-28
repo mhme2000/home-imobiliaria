@@ -7,21 +7,21 @@ html, body {
 
 .container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10vh 88vh 350vh 20vh;
-    grid-template-areas: "header header"
-                        "main main"
-                        "aside aside"
-                        "footer footer";
+    grid-template-areas: " header header header"
+                        " main main main"
+                        " aside aside aside "
+                        "footer footer footer"
 }
 
 header {
-    background-color: black;
+    background-color: #221B19;
     grid-area: header;
 }
 
 main{
-    background-color: blue;
+    background: no-repeat center url(../images/capa);
     grid-area: main;    
 }
 
@@ -33,4 +33,30 @@ aside {
 footer {
     background-color: brown;
     grid-area: footer;
+    justify-self: center;
+    align-self: center;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
